@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap%27');
+
+.containerX {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    margin: 10px 100px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerX .box {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+    background: transparent;
+    transform-style: preserve-3d;
+}
+
+.containerX .box::before {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 6em;
+    font-weight: 900;
+    color: transparent;
+    font-style: italic;
+    opacity: 0;
+}
+
+.containerX .box::after {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: transparent;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.containerX .box:hover::before,
+.containerX .box:hover::after {
+    opacity: 0.2;
+}
+
+.containerX .box .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: black;
+    padding: 0px 10px;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    font-size: 15px;
+    max-width: 100%;
+}
+
+.containerX .box:hover .name {
+    top: 15px;
+    opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+    .containerX .box .name {
+        margin-top: 10px;
+    }
+
+    .containerX .box .product {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .containerX .box .name {
+        font-size: 11.5px;
+        padding: 0px;
+    }
+}
+
+.containerX .box .buy {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, 0, 75px);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    background: black;
+}
+
+.containerX .box:hover .buy {
+    bottom: 20px;
+    opacity: 1;
+}
+
+/* .containerX .box .circle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: black;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 50px);
+} */
+.containerX .box img {
+    border-radius: 50%;
+}
+
+.containerX .box .product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index: 10;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 60px);
+}
+
+.containerX .box:hover .product {
+    transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+}
+
+.containerX div img {
+    width: 70%;
+}
+
+/* .containerX .box:nth-child(4n+1) .circle,
+.containerX .box:nth-child(4n+1) .buy {
+    background: #4f70fb;
+}
+
+.containerX .box:nth-child(4n+2) .circle,
+.containerX .box:nth-child(4n+2) .buy {
+    background: #9bdc28;
+}
+
+.containerX .box:nth-child(4n+3) .circle,
+.containerX .box:nth-child(4n+3) .buy {
+    background: #fb4b4f;
+}
+
+.containerX .box:nth-child(4n+4) .circle,
+.containerX .box:nth-child(4n+4) .buy {
+    background: #52009D;
+} */

@@ -1,0 +1,8 @@
+.carousel-container img {
+    border-radius: 50px;
+}
+
+.carousel-container {
+    max-width: 80%;
+    margin: auto;
+}

@@ -1,0 +1,29 @@
+.GalleryLL {
+    margin: auto 75px;
+}
+
+@media screen and (max-width: 768px) {
+    .GalleryLL {
+        margin: auto 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .GalleryLL {
+        margin: auto 25px;
+    }
+
+    .InfoLL {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .GalleryLL {
+        margin: auto 10px;
+    }
+
+    .InfoLL {
+        font-size: 11px;
+    }
+}
